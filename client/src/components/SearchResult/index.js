@@ -43,7 +43,7 @@ const SearchResult = props => {
                                         <button className="saveBook btn btn-primary" id={book.id} onClick={(event) => props.handleSavedButton(event)}>
                                             Save Book
                                         </button>
-                                        <a href={book.link}>
+                                        <a href={book.link} >
                                             <button className="viewBook btn btn-success">
                                                 View Book
                                         </button>
