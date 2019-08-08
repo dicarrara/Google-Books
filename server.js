@@ -21,6 +21,6 @@ app.use(routes)
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {useNewUrlParser: true});
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
